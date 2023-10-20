@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const LatestProductCard = ({ product }) => {
   const { img_url } = product;
   return (
@@ -9,4 +10,7 @@ const LatestProductCard = ({ product }) => {
   );
 };
 
+LatestProductCard.propTypes = {
+  product: PropTypes.object,
+};
 export default LatestProductCard;

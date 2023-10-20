@@ -16,7 +16,7 @@ const CustomerReview = () => {
         <p className="mt-3">
           I recently purchased a Digitech smartwatch from this store, and it has
           truly exceeded my expectations. The watch is stylish, feature-packed,
-          and works seamlessly with my smartphone. I'm impressed with its
+          and works seamlessly with my smartphone. I am impressed with its
           accurate health monitoring and the long battery life. Digitech has won
           me over with this fantastic product
         </p>

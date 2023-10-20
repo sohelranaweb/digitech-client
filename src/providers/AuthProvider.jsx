@@ -8,8 +8,9 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-const provider = new GoogleAuthProvider();
+import PropTypes from "prop-types";
 import app from "../firebase/firebase.config";
+const provider = new GoogleAuthProvider();
 
 const auth = getAuth(app);
 
@@ -57,6 +58,10 @@ const AuthProvider = ({ children }) => {
   return (
     <AuthContext.Provider value={userInfo}>{children}</AuthContext.Provider>
   );
+};
+
+AuthProvider.propTypes = {
+  children: PropTypes.node,
 };
 
 export default AuthProvider;

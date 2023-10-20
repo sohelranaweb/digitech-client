@@ -3,9 +3,9 @@ import ProductCard from "./ProductCard";
 import Navbar from "../Shared/Navbar/Navbar";
 
 const Products = () => {
-  const prodcuts = useLoaderData();
+  const products = useLoaderData();
+  console.log(products);
 
-  console.log(prodcuts);
   return (
     <div className="lg:px-0 px-3">
       <Navbar></Navbar>
@@ -56,7 +56,7 @@ const Products = () => {
         </div>
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-20 lg:px-0 px-3">
-        {prodcuts.map((product) => (
+        {products.map((product) => (
           <ProductCard key={product._id} product={product}></ProductCard>
         ))}
       </div>

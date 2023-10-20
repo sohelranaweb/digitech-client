@@ -1,19 +1,10 @@
 import { FaDollarSign } from "react-icons/fa";
 import StarRating from "./StarRating";
 import { Link } from "react-router-dom";
-import Navbar from "../Shared/Navbar/Navbar";
+import PropTypes from "prop-types";
 
 const ProductCard = ({ product }) => {
-  const {
-    _id,
-    name,
-    brandName,
-    typeOfProduct,
-    price,
-    description,
-    rating,
-    photo,
-  } = product;
+  const { _id, name, brandName, typeOfProduct, price, rating, photo } = product;
   return (
     <div>
       <div className="card  bg-base-100 shadow-xl">
@@ -54,6 +45,9 @@ const ProductCard = ({ product }) => {
       </div>
     </div>
   );
+};
+ProductCard.propTypes = {
+  product: PropTypes.object,
 };
 
 export default ProductCard;

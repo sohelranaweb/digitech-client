@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import StarRating from "../Products/StarRating";
 import { FaDollarSign } from "react-icons/fa";
 import Swal from "sweetalert2";
+import PropTypes from "prop-types";
 
 const MyCartCard = ({ product, cartProduct, setCartProduct }) => {
   const { _id, name, brandName, typeOfProduct, price, rating, photo } = product;
@@ -66,4 +67,9 @@ const MyCartCard = ({ product, cartProduct, setCartProduct }) => {
   );
 };
 
+MyCartCard.propTypes = {
+  product: PropTypes.object,
+  cartProduct: PropTypes.array,
+  setCartProduct: PropTypes.array,
+};
 export default MyCartCard;
