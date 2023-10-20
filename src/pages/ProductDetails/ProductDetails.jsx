@@ -19,13 +19,16 @@ const ProductDetails = () => {
       rating,
       photo,
     };
-    fetch("http://localhost:5000/storeProducts", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(product),
-    })
+    fetch(
+      "https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/storeProducts",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(product),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

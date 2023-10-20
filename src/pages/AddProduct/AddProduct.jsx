@@ -22,7 +22,7 @@ const AddProduct = () => {
       photo,
     };
     console.log(newProduct);
-    fetch("http://localhost:5000/products", {
+    fetch("https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

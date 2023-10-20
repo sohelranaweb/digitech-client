@@ -20,7 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () =>
+          fetch(
+            "https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/products"
+          ),
       },
 
       {
@@ -38,7 +41,10 @@ const router = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/storeProducts"),
+        loader: () =>
+          fetch(
+            "https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/storeProducts"
+          ),
       },
       {
         path: "register",
@@ -52,7 +58,9 @@ const router = createBrowserRouter([
         path: "/products/:brandName",
         element: <Products></Products>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.brandName}`),
+          fetch(
+            `https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/products/${params.brandName}`
+          ),
       },
       {
         path: "/productDetails/:id",
@@ -62,7 +70,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/productDetails/${params.id}`),
+          fetch(
+            `https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/productDetails/${params.id}`
+          ),
       },
       {
         path: "/updateProduct/:id",
@@ -72,7 +82,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/updateProduct/${params.id}`),
+          fetch(
+            `https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/updateProduct/${params.id}`
+          ),
       },
     ],
   },

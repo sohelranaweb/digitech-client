@@ -19,13 +19,20 @@ const MyCartCard = ({ product, cartProduct, setCartProduct }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/storeProducts/${_id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/storeProducts/${_id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
-              Swal.fire("Deleted!", "Your file has been deleted.", "success");
+              Swal.fire(
+                "Deleted!",
+                "Your product has been deleted.",
+                "success"
+              );
               const remaining = cartProduct.filter((pd) => pd._id !== _id);
               setCartProduct(remaining);
             }
