@@ -41,7 +41,7 @@ const ProductCard = ({ product }) => {
           <div className="card-actions justify-between">
             <Link to={`/productDetails/${_id}`}>
               <button className="btn bg-[#2e6ed5] text-white">
-                Details Product
+                Product Details
               </button>
             </Link>
             <Link to={`/updateProduct/${_id}`}>
