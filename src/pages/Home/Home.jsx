@@ -70,6 +70,9 @@ const Home = () => {
           <CustomerReview></CustomerReview>
         </div>
       </div>
+      <div className="mt-12">
+        <Footer></Footer>
+      </div>
     </div>
   );
 };
