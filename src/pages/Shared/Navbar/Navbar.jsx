@@ -16,7 +16,7 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#03b97c]  text-lg font-bold"
+              ? "text-[#2e6ed5]  text-lg font-bold"
               : "text-lg font-bold"
           }
         >
@@ -30,7 +30,7 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#03b97c]  text-lg font-bold"
+              ? "text-[#2e6ed5]  text-lg font-bold"
               : "text-lg font-bold"
           }
         >
@@ -44,25 +44,11 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#03b97c]  text-lg font-bold"
+              ? "text-[#2e6ed5]  text-lg font-bold"
               : "text-lg font-bold"
           }
         >
           My Cart
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/register"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-[#03b97c]  text-lg font-bold"
-              : "text-lg font-bold"
-          }
-        >
-          Register
         </NavLink>
       </li>
     </>
@@ -94,7 +80,13 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">
+          <img
+            className="lg:h-[48px] md:h-[40px] h-[25px]"
+            src="https://i.ibb.co/Brv2Xq2/logo.png"
+            alt=""
+          />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
@@ -117,13 +109,13 @@ const Navbar = () => {
         {user ? (
           <button
             onClick={handleSignOut}
-            className="btn text-white btn-outline bg-[#03b97c]"
+            className="btn text-white btn-outline bg-[#2e6ed5]"
           >
             Sign OUt
           </button>
         ) : (
           <Link to="/login">
-            <button className="btn text-white btn-outline bg-[#03b97c]">
+            <button className="btn text-white btn-outline bg-[#2e6ed5]">
               Login
             </button>
           </Link>

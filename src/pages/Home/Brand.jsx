@@ -5,7 +5,7 @@ const Brand = ({ brand }) => {
   return (
     <div className="card  bg-base-100 shadow-xl">
       <figure>
-        <img src={image} alt="Shoes" />
+        <img className="w-[200px] h-[200px] pt-2" src={image} alt="Shoes" />
       </figure>
       <div className="card-body">
         <Link to={`products/${brandName}`}>
