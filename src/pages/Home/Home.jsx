@@ -58,6 +58,18 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <div className="mt-24 mb-8">
+        <h1 className="text-center text-3xl font-medium mb-2">
+          What Our <span className="text-[#2e6ed5]">Customers Say</span>
+        </h1>
+        <p className="text-center text-lg">
+          Discover firsthand insights and opinions from our valued customers who
+          have <br /> experienced our products and services.
+        </p>
+        <div className="mt-4">
+          <CustomerReview></CustomerReview>
+        </div>
+      </div>
     </div>
   );
 };
