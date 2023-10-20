@@ -9,7 +9,9 @@ const Brand = ({ brand }) => {
       </figure>
       <div className="card-body">
         <Link to={`products/${brandName}`}>
-          <h2 className="card-title">{brandName}</h2>
+          <h2 className="text-center text-2xl font-semibold text-[#2e6ed5]">
+            {brandName}
+          </h2>
         </Link>
       </div>
     </div>
