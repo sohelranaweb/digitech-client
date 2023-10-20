@@ -1,10 +1,10 @@
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import Navbar from "../Shared/Navbar/Navbar";
+import { useState } from "react";
 
 const Products = () => {
   const products = useLoaderData();
-  console.log(products);
 
   return (
     <div className="lg:px-0 px-3">
@@ -55,11 +55,21 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-20 lg:px-0 px-3">
-        {products.map((product) => (
-          <ProductCard key={product._id} product={product}></ProductCard>
-        ))}
-      </div>
+      {products.length === 0 ? (
+        <div className="text-center mt-10">
+          <h1 className="text-xl font-medium">
+            At this moment! Not available Product of this{" "}
+            <span className="text-[#2e6ed5]">Brand</span>!!
+          </h1>
+          <p className="text-lg text-red-600">Try again later!!</p>
+        </div>
+      ) : (
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-20 lg:px-0 px-3">
+          {products.map((product) => (
+            <ProductCard key={product._id} product={product}></ProductCard>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
