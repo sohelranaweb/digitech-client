@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../providers/AuthProvider";
 import Navbar from "../Shared/Navbar/Navbar";
 const Login = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn, signInWithGoogle } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   console.log("locatin in the login page", location);
@@ -29,7 +29,17 @@ const Login = () => {
       });
   };
 
-  const handleloginGoogle = () => {};
+  const handleloginGoogle = () => {
+    signInWithGoogle()
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   return (
     <div>
       <Navbar></Navbar>
