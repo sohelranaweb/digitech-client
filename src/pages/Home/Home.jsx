@@ -24,20 +24,22 @@ const Home = () => {
       <div className="my-8">
         <Navbar></Navbar>
       </div>
-      <div className="mb-20">
+      <div className="mb-20 lg:px-0 px-3">
         <Banner></Banner>
       </div>
       <div>
-        <h1 className="text-center text-3xl font-semibold mb-4">
-          All <span className="text-[#2e6ed5]">Brands</span>
-        </h1>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-          {brands.map((brand) => (
-            <Brand key={brand.id} brand={brand}></Brand>
-          ))}
+        <div className="lg:px-0 px-3">
+          <h1 className="text-center text-3xl font-semibold mb-4">
+            All <span className="text-[#2e6ed5]">Brands</span>
+          </h1>
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+            {brands.map((brand) => (
+              <Brand key={brand.id} brand={brand}></Brand>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="mt-24 mb-8">
+      <div className="mt-24 mb-8 lg:px-0 px-3">
         <h1 className="text-center text-3xl font-medium mb-2">
           Latest <span className="text-[#2e6ed5]">Products</span>
         </h1>
@@ -58,7 +60,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="mt-24 mb-8">
+      <div className="mt-24 mb-8 lg:px-0 px-3">
         <h1 className="text-center text-3xl font-medium mb-2">
           What Our <span className="text-[#2e6ed5]">Customers Say</span>
         </h1>

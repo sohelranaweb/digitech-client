@@ -111,7 +111,7 @@ const Navbar = () => {
             onClick={handleSignOut}
             className="btn text-white btn-outline bg-[#2e6ed5]"
           >
-            Sign OUt
+            Log Out
           </button>
         ) : (
           <Link to="/login">

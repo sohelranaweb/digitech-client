@@ -34,15 +34,13 @@ const MyCartCard = ({ product, cartProduct, setCartProduct }) => {
     });
   };
   return (
-    <div className="card card-side bg-base-100 shadow-xl w-3/4">
+    <div className="card card-side bg-base-100 shadow-xl lg:w-3/4">
       <figure>
         <img className="h-[300px] w-[400px] p-2" src={photo} alt="Movie" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-        <h2 className="card-title text-lg font-medium text-[#2e6ed5]">
-          {brandName}
-        </h2>
+        <h2 className="text-lg font-medium">{name}</h2>
+        <h2 className=" text-lg font-medium text-[#2e6ed5]">{brandName}</h2>
         <p className="text-lg font-medium">{typeOfProduct}</p>
         <p className="flex items-center text-[#2e6ed5] text-lg font-medium">
           <FaDollarSign></FaDollarSign>

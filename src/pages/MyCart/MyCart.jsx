@@ -8,7 +8,7 @@ const MyCart = () => {
   const [cartProduct, setCartProduct] = useState(products);
 
   return (
-    <div>
+    <div className="lg:px-0 px-3">
       <Navbar></Navbar>
       <div className="grid grid-cols-1 gap-8">
         {cartProduct.map((product) => (

@@ -41,10 +41,9 @@ const Login = () => {
       });
   };
   return (
-    <div>
+    <div className="lg:px-0 px-3">
       <Navbar></Navbar>
-      <div>
-        <h1 className="text-center my-12">This is login page</h1>
+      <div className="mt-16">
         <form onSubmit={handleLogin} className="lg:w-1/2 md:w-3/4 mx-auto">
           <div className="form-control">
             <label className="label">
@@ -71,14 +70,14 @@ const Login = () => {
             />
           </div>
           <div className="form-control mt-6">
-            <button className="btn text-white btn-outline bg-[#03b97c]">
+            <button className="btn text-white btn-outline bg-[#2e6ed5]">
               Login
             </button>
           </div>
         </form>
         <p className="text-center mt-4">
           Do not have account{" "}
-          <Link className=" font-bold text-[#03b97c]" to="/register">
+          <Link className=" font-bold text-[#2e6ed5]" to="/register">
             Register
           </Link>
         </p>
@@ -86,7 +85,7 @@ const Login = () => {
       <ToastContainer></ToastContainer>
       <p className="text-center mt-4">
         Login with Google Account {""}
-        <Link onClick={handleloginGoogle} className=" font-bold text-[#03b97c]">
+        <Link onClick={handleloginGoogle} className=" font-bold text-[#2e6ed5]">
           Google
         </Link>
       </p>

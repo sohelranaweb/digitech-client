@@ -9,7 +9,7 @@ const Products = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-20 lg:px-0 px-3">
         {prodcuts.map((product) => (
           <ProductCard key={product._id} product={product}></ProductCard>
         ))}

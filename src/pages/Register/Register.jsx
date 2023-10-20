@@ -43,10 +43,9 @@ const Register = () => {
     }
   };
   return (
-    <div>
+    <div className="lg:px-0 px-3">
       <Navbar></Navbar>
-      <div>
-        <h1 className="text-center my-12">This is Register page</h1>
+      <div className="mt-16">
         {registerError && (
           <p className="text-red-600 text-lg font-medium text-center">
             {registerError}
@@ -103,14 +102,14 @@ const Register = () => {
             />
           </div>
           <div className="form-control mt-6">
-            <button className="btn text-white btn-outline bg-[#03b97c]">
+            <button className="btn text-white btn-outline bg-[#2e6ed5]">
               Register
             </button>
           </div>
         </form>
         <p className="text-center mt-4">
           Already have account? {""}
-          <Link className=" font-bold text-[#03b97c] " to="/login">
+          <Link className=" font-bold text-[#2e6ed5] " to="/login">
             Login
           </Link>
         </p>

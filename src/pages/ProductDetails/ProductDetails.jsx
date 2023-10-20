@@ -42,33 +42,37 @@ const ProductDetails = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="card  bg-base-100 shadow-xl">
-        <figure>
-          <img className="w-full h-[600px]" src={photo} alt="Shoes" />
-        </figure>
-        <div className="card-body space-y-2">
-          <div className="flex justify-between">
-            <h2 className="card-title text-xl font-semibold">{name}</h2>
-            <h2 className="card-title text-xl font-semibold ">
-              <span className="text-[#2e6ed5]">{brandName}</span>
-            </h2>
-          </div>
-          <div className="flex justify-between">
-            <p className="text-lg font-medium">{typeOfProduct}</p>
-            <p className="flex items-center text-[#2e6ed5] text-lg font-medium">
-              <FaDollarSign></FaDollarSign>
-              {price}
-            </p>
-            <p>
-              <StarRating rating={rating} color="gold"></StarRating>
-            </p>
-          </div>
-          <p>{description}</p>
+      <div className="lg:px-0 px-3 mt-8">
+        <div className="card  bg-base-100 shadow-xl">
+          <figure>
+            <img className="w-full lg:h-[600px]" src={photo} alt="Shoes" />
+          </figure>
+          <div className="card-body space-y-2">
+            <div className="flex justify-between">
+              <h2 className="card-title text-xl font-semibold">{name}</h2>
+              <h2 className="card-title text-xl font-semibold ">
+                <span className="text-[#2e6ed5]">{brandName}</span>
+              </h2>
+            </div>
+            <div className="flex justify-between">
+              <p className="text-lg font-medium">{typeOfProduct}</p>
+              <p className="flex items-center text-[#2e6ed5] text-lg font-medium">
+                <FaDollarSign></FaDollarSign>
+                {price}
+              </p>
+              <p>
+                <StarRating rating={rating} color="gold"></StarRating>
+              </p>
+            </div>
+            <p>{description}</p>
 
-          <div className="card-actions justify-between">
-            <Link onClick={handleAddToCart}>
-              <button className="btn bg-[#2e6ed5] text-white">Add Cart</button>
-            </Link>
+            <div className="card-actions justify-between">
+              <Link onClick={handleAddToCart}>
+                <button className="btn bg-[#2e6ed5] text-white">
+                  Add Cart
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

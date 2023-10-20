@@ -4,12 +4,12 @@ const Banner = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           src="https://i.ibb.co/gF3YyYD/banner-image.jpg"
-          className="max-w-xl max-h-xl rounded-lg shadow-2xl"
+          className="lg:max-w-xl lg:max-h-xl rounded-lg shadow-2xl"
         />
         <div>
-          <h1 className="text-4xl font-bold">
+          <h1 className="lg:text-4xl text-2xl font-bold">
             Discover Leading <br />{" "}
-            <span className="text-5xl font-bold text-[#2e6ed5]">
+            <span className="lg:text-5xl text-3xl font-bold text-[#2e6ed5]">
               Electronics Brands
             </span>
           </h1>

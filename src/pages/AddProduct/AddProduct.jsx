@@ -43,10 +43,12 @@ const AddProduct = () => {
       });
   };
   return (
-    <div>
+    <div className="lg:px-0 px-3">
       <Navbar></Navbar>
-      <div className="bg-[#F4F3F0] p-24">
-        <h1 className="text-3xl font-bold">Add Products</h1>
+      <div className="bg-[#F4F3F0] p-24 mt-8">
+        <h1 className="lg:text-3xl text-xl font-bold">
+          Add <span className="text-[#2e6ed5]">Products</span>
+        </h1>
         <form onSubmit={handleAddProduct}>
           {/* form row product name and brand name */}
           <div className="md:flex mb-8">
@@ -154,7 +156,7 @@ const AddProduct = () => {
           <input
             type="submit"
             value="Add Product"
-            className="btn btn-block bg-[#D2B48C]"
+            className="btn btn-block text-white bg-[#2e6ed5]"
           />
         </form>
       </div>
