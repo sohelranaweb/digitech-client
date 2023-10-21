@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <Home></Home>,
         loader: () =>
           fetch(
-            "https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/products"
+            "https://digitech-server-83i85x7t0-sohel-rana.vercel.app/products"
           ),
       },
 
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         ),
         loader: () =>
           fetch(
-            "https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/storeProducts"
+            "https://digitech-server-83i85x7t0-sohel-rana.vercel.app/storeProducts"
           ),
       },
       {
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         element: <Products></Products>,
         loader: ({ params }) =>
           fetch(
-            `https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/products/${params.brandName}`
+            `https://digitech-server-83i85x7t0-sohel-rana.vercel.app/products/${params.brandName}`
           ),
       },
       {
@@ -71,7 +71,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/productDetails/${params.id}`
+            `https://digitech-server-83i85x7t0-sohel-rana.vercel.app/productDetails/${params.id}`
           ),
       },
       {
@@ -83,7 +83,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/updateProduct/${params.id}`
+            `https://digitech-server-83i85x7t0-sohel-rana.vercel.app/updateProduct/${params.id}`
           ),
       },
     ],

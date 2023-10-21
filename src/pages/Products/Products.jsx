@@ -1,7 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import Navbar from "../Shared/Navbar/Navbar";
-import { useState } from "react";
 
 const Products = () => {
   const products = useLoaderData();

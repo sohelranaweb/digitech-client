@@ -17,7 +17,7 @@ const Banner = () => {
             Welcome to our online brand shop, your gateway to a world of
             cutting-edge technology and innovation. Explore a curated selection
             of top-tier electronics brands that redefine the way we live, work,
-            and play. Whether you're in search of the latest smartphones,
+            and play. Whether you are in search of the latest smartphones,
             state-of-the-art laptops, premium audio gear, or smart home
             solutions, our collection has you covered.
           </p>

@@ -21,7 +21,7 @@ const MyCartCard = ({ product, cartProduct, setCartProduct }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `https://digitech-server-dbg4h7mbb-sohel-rana.vercel.app/storeProducts/${_id}`,
+          `https://digitech-server-83i85x7t0-sohel-rana.vercel.app/storeProducts/${_id}`,
           {
             method: "DELETE",
           }

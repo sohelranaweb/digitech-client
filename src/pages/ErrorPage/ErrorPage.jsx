@@ -8,7 +8,7 @@ const ErrorPage = () => {
       </h1>
       <p className="text-center text-xl">
         Go Back{" "}
-        <Link to="/" className="text-2xl text-[#03b97c] font-semibold">
+        <Link to="/" className="text-2xl text-[#2e6ed5] font-semibold">
           Home
         </Link>
       </p>
